@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+//exercise 1
+
+function reverseString(str) {
+    let reversed = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+}
+var reversedString = reverseString("Hello");
+console.log(reversedString); 
+
+//exercice 2
+
+function countCharacters(str) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        count++;
+    }
+    return count;
+}
+const characterCount = countCharacters("Hello");
+console.log(characterCount); 
+
+//Array Functions:
+//1
+
+var numbers = [7, 9, 5, 2, -1,];
+function findMaximum(arr) {
+    let max = arr[0]; 
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]; 
+        }
+    }
+    return max;
+}
+
+function findMinimum(arr) {
+    let min = arr[0]; 
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i]; 
+        }
+    }
+    return min;
+}
+
+console.log(`Maximum: ${findMaximum(numbers)}`); 
+console.log(`Minimum: ${findMinimum(numbers)}`);
+
+// 2
+
+var numbers = [1, 2, 3, 4, 5];
+function sumarray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+console.log(sumarray(numbers));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
